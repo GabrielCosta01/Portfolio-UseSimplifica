@@ -21,13 +21,13 @@ Contato: WhatsApp +55 64 99654-8108 · Instagram @usesimplifica
 - **Resgate de site lento** — diagnóstico e correção de velocidade em site que já está no ar.
 - **Parceria white-label** — produção terceirizada para agências de tráfego e de marketing, com a marca da agência na entrega.
 
-## Projetos no ar
+## Landing pages no ar
 
-- [Eureka Recreação](https://www.eurekarecreacao.com.br/): site institucional de recreação infantil em Rio Verde, GO.
-- [Nelore Steak House](https://nelore-steak-house.vercel.app/): cardápio digital de restaurante de carnes.
-- [DJ Jay](https://dj-jay-dun.vercel.app/): site de artista com sets do Spotify e agenda de eventos.
-- [SNKRS](https://sneaker-landing-page-fawn.vercel.app/): catálogo web de tênis com carrinho.
-- [Links da Simplifica](https://link.usesimplifica.com.br/): página de links em domínio próprio.
+- [Eureka Recreação](https://www.eurekarecreacao.com.br/): landing page de recreação infantil em Rio Verde, GO, com orçamento pelo WhatsApp.
+- [Nelore Steak House](https://nelore-steak-house.vercel.app/): landing page de restaurante com cardápio e pedido na própria página.
+- [DJ Jay](https://dj-jay-dun.vercel.app/): landing page de artista com sets do Spotify, agenda e contato de booking.
+- [SNKRS](https://sneaker-landing-page-fawn.vercel.app/): landing page de catálogo de tênis com carrinho na própria página.
+- [Links da Simplifica](https://link.usesimplifica.com.br/): landing page de links em domínio próprio.
 
 ## Como trabalhamos
 

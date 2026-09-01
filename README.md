@@ -75,12 +75,26 @@ vercel deploy --prod
 
 ### DNS
 
-O apex já está no ar. Falta só o `www`, que ainda não resolve:
+O apex está no ar. O `www` **não** está configurado:
 
 ```
-A    @      76.76.21.21    ✅ configurado
-A    www    76.76.21.21    ⬅ falta
+A    @      76.76.21.21    ✅
+A    www    76.76.21.21    ⬅ falta no Registro.br
 ```
+
+⚠️ **Não adicione o www como domínio do projeto na Vercel antes de criar
+o registro A.** Foi o que derrubou o site em 01/09/2026: com os dois
+domínios no projeto, a Vercel elegeu o `www` como canônico e passou a
+redirecionar o apex (307) para um host que não resolve. A correção foi
+limpar o campo `redirect` do apex e remover o `www` do projeto:
+
+```
+PATCH /v9/projects/{id}/domains/usesimplifica.com.br  {"redirect": null}
+DELETE /v9/projects/{id}/domains/www.usesimplifica.com.br
+```
+
+A ordem correta é: criar o registro A do `www` primeiro, só então
+adicionar o domínio ao projeto.
 
 ⚠️ **Não troque os nameservers.** Os subdomínios `link`, `parceria` e `imob`
 apontam para outros projetos via CNAME e cairiam junto.
