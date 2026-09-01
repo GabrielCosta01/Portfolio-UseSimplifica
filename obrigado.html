@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#04060E">
+<meta name="robots" content="noindex, nofollow">
+<title>Recebido — Simplifica</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap">
+
+<!-- Google tag — cole aqui o snippet do Google Ads (AW-...) e/ou do GA4 (G-...).
+     A conversão é disparada mais abaixo, no bloco de script. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+</script>
+
+<style>
+:root{
+  --void:#04060E; --blue:#0B309A; --blue-hot:#1B4DF0; --blue-deep:#071F63;
+  --cyan:#28DBDC; --lime:#39FF14; --paper:#EDF1F8; --muted:#8592B2;
+  --line:rgba(198,210,230,.16);
+  --f-display:"Sora","Segoe UI",system-ui,sans-serif;
+  --f-body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ background:var(--void); }
+body{
+  margin:0; min-height:100svh;
+  display:flex; align-items:center; justify-content:center;
+  padding:1.5rem;
+  background:
+    radial-gradient(120% 80% at 50% 0%,
+      #2557FF 0%, var(--blue-hot) 18%, var(--blue) 40%,
+      var(--blue-deep) 64%, #050A18 86%, var(--void) 100%);
+  color:var(--paper);
+  font-family:var(--f-body);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+body::after{
+  content:""; position:fixed; inset:0; pointer-events:none;
+  opacity:.4; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+.caixa{
+  position:relative; z-index:1;
+  width:100%; max-width:560px;
+  text-align:center;
+}
+.marca{
+  display:inline-flex; align-items:center; gap:.55rem;
+  font-family:var(--f-display); font-weight:800; font-size:.9rem;
+  color:#fff; text-decoration:none; margin-bottom:2rem;
+}
+.marca img{ width:22px; height:22px; display:block; }
+.selo{
+  width:56px; height:56px; margin:0 auto 1.4rem;
+  border-radius:50%;
+  border:1px solid rgba(57,255,20,.4);
+  display:grid; place-items:center;
+  background:rgba(57,255,20,.08);
+}
+.selo svg{ width:26px; height:26px; }
+.selo path{
+  stroke:var(--lime); stroke-width:2.5; fill:none;
+  stroke-linecap:round; stroke-linejoin:round;
+  stroke-dasharray:30; stroke-dashoffset:30;
+  animation:risca .7s var(--ease) .25s forwards;
+}
+@keyframes risca{ to{ stroke-dashoffset:0; } }
+h1{
+  font-family:var(--f-display); font-weight:800;
+  font-size:clamp(1.9rem,7vw,3rem); line-height:1.02;
+  letter-spacing:-.04em; margin:0 0 .9rem; color:#fff;
+  text-wrap:balance;
+}
+.lede{
+  font-size:1.02rem; color:rgba(237,241,248,.84);
+  margin:0 auto 1.8rem; max-width:44ch;
+}
+.lede b{ color:#fff; }
+.btn{
+  display:inline-flex; align-items:center; gap:.6rem;
+  font-family:var(--f-mono); font-size:.72rem;
+  letter-spacing:.14em; text-transform:uppercase;
+  padding:.95rem 1.6rem; border-radius:999px;
+  border:1px solid transparent; text-decoration:none;
+  background:var(--paper); color:#061033;
+  box-shadow:0 12px 34px rgba(4,10,32,.45);
+  transition:transform .3s var(--ease), background-color .3s ease, color .3s ease;
+}
+.btn:hover{ background:var(--lime); color:#041400; transform:translateY(-2px); }
+.btn span{ transition:transform .3s var(--ease); }
+.btn:hover span{ transform:translateX(4px); }
+.depois{
+  margin-top:2.2rem; padding-top:1.4rem;
+  border-top:1px solid var(--line);
+  font-family:var(--f-mono); font-size:.64rem;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--muted);
+}
+.depois a{ color:rgba(237,241,248,.8); }
+.depois a:hover{ color:var(--cyan); }
+:focus-visible{ outline:2px solid var(--cyan); outline-offset:3px; border-radius:4px; }
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{ animation-duration:.001ms!important; transition-duration:.001ms!important; }
+  .selo path{ stroke-dashoffset:0!important; }
+}
+</style>
+</head>
+<body>
+
+<main class="caixa">
+  <a class="marca" href="/">
+    <img src="img/marca.webp" width="22" height="22" alt="">
+    Simplifica
+  </a>
+
+  <div class="selo" aria-hidden="true">
+    <svg viewBox="0 0 24 24"><path d="M4 12.5l5.5 5.5L20 7"/></svg>
+  </div>
+
+  <h1 id="titulo">Recebido.</h1>
+
+  <p class="lede">
+    Sua mensagem chegou. Respondo em até <b>24 horas</b> com escopo, valor e
+    data de entrega — sem reunião e sem proposta de dez páginas.
+  </p>
+
+  <a class="btn" id="zap" href="https://wa.me/5564992078571" target="_blank" rel="noopener">
+    Adiantar no WhatsApp <span aria-hidden="true">→</span>
+  </a>
+
+  <p class="depois">
+    <a href="/">Voltar para o site</a> &nbsp;·&nbsp;
+    <a href="https://instagram.com/usesimplifica" target="_blank" rel="noopener">@usesimplifica</a>
+  </p>
+</main>
+
+<script>
+(function(){
+  "use strict";
+
+  /* Conversão do Google Ads. Troque AW-XXXXXXXXX/XXXXXXXX pelo rótulo que
+     o Ads gera em Ferramentas → Conversões → nova ação → "Site". */
+  gtag("event", "conversion", { send_to: "AW-XXXXXXXXX/XXXXXXXX" });
+  gtag("event", "generate_lead");
+
+  /* personaliza com o nome deixado no formulário */
+  var nome = "";
+  try { nome = sessionStorage.getItem("lead_nome") || ""; } catch (e) {}
+  if (nome){
+    var primeiro = nome.split(" ")[0];
+    document.getElementById("titulo").textContent = "Recebido, " + primeiro + ".";
+    document.getElementById("zap").href =
+      "https://wa.me/5564992078571?text=" +
+      encodeURIComponent("Oi, sou " + nome + ". Acabei de preencher o formulário no site.");
+    try { sessionStorage.removeItem("lead_nome"); } catch (e) {}
+  }
+})();
+</script>
+</body>
+</html>

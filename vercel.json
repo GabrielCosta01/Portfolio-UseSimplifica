@@ -35,5 +35,6 @@
       "destination": "https://usesimplifica.com.br/$1",
       "permanent": true
     }
-  ]
+  ],
+  "cleanUrls": true
 }
