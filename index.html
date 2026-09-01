@@ -100,7 +100,14 @@
         "@type": "Country",
         "name": "Brasil"
        }
-      }
+      },
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "minPrice": 1500,
+       "priceCurrency": "BRL",
+       "valueAddedTaxIncluded": true
+      },
+      "availability": "https://schema.org/InStock"
      },
      {
       "@type": "Offer",
@@ -130,7 +137,14 @@
         "@type": "Country",
         "name": "Brasil"
        }
-      }
+      },
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "minPrice": 2500,
+       "priceCurrency": "BRL",
+       "valueAddedTaxIncluded": true
+      },
+      "availability": "https://schema.org/InStock"
      },
      {
       "@type": "Offer",
@@ -145,7 +159,14 @@
         "@type": "Country",
         "name": "Brasil"
        }
-      }
+      },
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "minPrice": 2500,
+       "priceCurrency": "BRL",
+       "valueAddedTaxIncluded": true
+      },
+      "availability": "https://schema.org/InStock"
      },
      {
       "@type": "Offer",
@@ -1035,7 +1056,15 @@ section{ position:relative; }
 .svc-d{ grid-column:2; font-size:.88rem; color:var(--muted); line-height:1.55; margin:0; }
 .svc-tag{
   grid-column:2;
-  font-family:var(--f-mono); font-size:.56rem; letter-spacing:.12em;
+  display:flex; flex-direction:column; gap:.15rem;
+  font-family:var(--f-mono);
+}
+.svc-tag b{
+  font-weight:400; font-size:.68rem; letter-spacing:.02em;
+  color:var(--paper); white-space:nowrap;
+}
+.svc-tag small{
+  font-size:.56rem; letter-spacing:.12em;
   text-transform:uppercase; color:var(--muted-2);
 }
 
@@ -1180,6 +1209,7 @@ section{ position:relative; }
   }
   .svc:hover{ padding-left:.8rem; }
   .svc-d, .svc-tag{ grid-column:auto; }
+  .svc-tag{ align-items:flex-end; text-align:right; }
   .stack{ padding-top:1.6rem; }
 
   .cta-inner{ align-items:center; text-align:center; }
@@ -1620,31 +1650,31 @@ section{ position:relative; }
         <span class="svc-n">/ 01</span>
         <span class="svc-t">Landing pages</span>
         <p class="svc-d">Página única para campanha paga, com texto e design. Pronta em 48 horas.</p>
-        <span class="svc-tag">48 horas</span>
+        <span class="svc-tag"><b>a partir de R$ 1.500</b><small>48 horas</small></span>
       </div>
       <div class="svc rv" style="--d:.05s">
         <span class="svc-n">/ 02</span>
         <span class="svc-t">Sites institucionais</span>
         <p class="svc-d">Presença completa, com estrutura para aparecer no Google.</p>
-        <span class="svc-tag">2 a 3 semanas</span>
+        <span class="svc-tag"><b>sob orçamento</b><small>2 a 3 semanas</small></span>
       </div>
       <div class="svc rv" style="--d:.10s">
         <span class="svc-n">/ 03</span>
         <span class="svc-t">Cardápios e catálogos</span>
         <p class="svc-d">Cardápio ou vitrine que abre no celular, sem aplicativo.</p>
-        <span class="svc-tag">1 semana</span>
+        <span class="svc-tag"><b>a partir de R$ 2.500</b><small>1 semana</small></span>
       </div>
       <div class="svc rv" style="--d:.15s">
         <span class="svc-n">/ 04</span>
         <span class="svc-t">Resgate de site lento</span>
         <p class="svc-d">Diagnóstico e correção de velocidade em site que já está no ar.</p>
-        <span class="svc-tag">Diagnóstico grátis</span>
+        <span class="svc-tag"><b>diagnóstico grátis</b><small>orçamento após o raio-x</small></span>
       </div>
       <div class="svc rv" style="--d:.20s">
         <span class="svc-n">/ 05</span>
         <span class="svc-t">Parceria white-label</span>
         <p class="svc-d">Somos o time de produção da sua agência. Sua marca em cada entrega.</p>
-        <span class="svc-tag">Mensal</span>
+        <span class="svc-tag"><b>tabela de parceiro</b><small>sob consulta</small></span>
       </div>
     </div>
 
