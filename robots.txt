@@ -1,4 +1,4 @@
-# Simplifica — https://usesimplifica.com.br
+# Simplifica / https://usesimplifica.com.br
 # Buscadores tradicionais: tudo liberado.
 User-agent: *
 Allow: /
@@ -38,7 +38,7 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
-# Google — não afeta o ranqueamento no Google Search
+# Google: não afeta o ranqueamento no Google Search
 User-agent: Google-Extended
 Allow: /
 
