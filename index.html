@@ -1,0 +1,1492 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#04060E">
+
+<title>Simplifica — Sites e landing pages que vendem</title>
+<meta name="description" content="Estúdio de Rio Verde, GO. Landing pages, sites e cardápios digitais que abrem em menos de um segundo. Do briefing ao ar em 48 horas.">
+<link rel="canonical" href="https://usesimplifica.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Simplifica">
+<meta property="og:title" content="Simplifica — Sites e landing pages que vendem">
+<meta property="og:description" content="Estúdio de Rio Verde, GO. Landing pages, sites e cardápios digitais que abrem em menos de um segundo. Do briefing ao ar em 48 horas.">
+<meta property="og:url" content="https://usesimplifica.com.br/">
+<meta property="og:image" content="https://usesimplifica.com.br/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Simplifica — Sites e landing pages que vendem">
+<meta name="twitter:description" content="Estúdio de Rio Verde, GO. Landing pages, sites e cardápios digitais que abrem em menos de um segundo. Do briefing ao ar em 48 horas.">
+<meta name="twitter:image" content="https://usesimplifica.com.br/og.jpg">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService",
+ "name":"Simplifica","url":"https://usesimplifica.com.br/","image":"https://usesimplifica.com.br/og.jpg",
+ "description":"Estúdio de Rio Verde, GO. Landing pages, sites e cardápios digitais que abrem em menos de um segundo. Do briefing ao ar em 48 horas.",
+ "founder":{"@type":"Person","name":"Gabriel C Costa"},
+ "areaServed":"BR",
+ "address":{"@type":"PostalAddress","addressRegion":"GO","addressCountry":"BR"},
+ "sameAs":["https://instagram.com/usesimplifica","https://link.usesimplifica.com.br/"]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Manrope:wght@400;500;600;800&family=JetBrains+Mono:wght@400;700&display=swap">
+
+<style>
+/* ============================================================
+   SIMPLIFICA — Portfólio
+   Mundo visual único (escuro, campo azul elétrico). Todas as cores são
+   pintadas explicitamente; nada herda o fundo do host.
+
+   Escrito mobile-first: as regras base descrevem o celular e as
+   consultas min-width acrescentam colunas conforme sobra largura.
+   ============================================================ */
+
+:root{
+  --void:      #04060E;
+  --void-2:    #080D1C;
+  --void-3:    #0C1226;
+  --blue:      #0B309A;
+  --blue-hot:  #1B4DF0;
+  --blue-deep: #071F63;
+  --cyan:      #28DBDC;
+  --lime:      #39FF14;
+  --loss:      #FF6B5A;
+  --paper:     #EDF1F8;
+  --muted:     #8592B2;
+  --muted-2:   #5B6788;
+  --line:      rgba(198,210,230,.13);
+  --line-2:    rgba(198,210,230,.28);
+
+  --f-display: "Sora", "Segoe UI", system-ui, sans-serif;
+  --f-body:    "Manrope", "Segoe UI", system-ui, sans-serif;
+  --f-mono:    "JetBrains Mono", ui-monospace, "Cascadia Mono", monospace;
+
+  --pad: 1.15rem;
+  --ease: cubic-bezier(.16,1,.3,1);
+}
+
+*, *::before, *::after{ box-sizing:border-box; }
+
+html{
+  background:var(--void);
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+  background:var(--void);
+  color:var(--paper);
+  font-family:var(--f-body);
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+
+:focus-visible{
+  outline:2px solid var(--cyan);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+::selection{ background:var(--lime); color:#04060E; }
+
+/* ---------- primitivos ---------- */
+
+.wrap{
+  width:100%;
+  max-width:1560px;
+  margin-inline:auto;
+  padding-inline:var(--pad);
+}
+
+.sr-only{
+  position:absolute; width:1px; height:1px;
+  padding:0; margin:-1px; overflow:hidden;
+  clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+
+.eyebrow{
+  font-family:var(--f-mono);
+  font-size:.62rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  isolation:isolate;
+  background:
+    radial-gradient(140% 78% at 50% 4%,
+      #2557FF 0%,
+      var(--blue-hot) 18%,
+      var(--blue) 40%,
+      var(--blue-deep) 64%,
+      #050A18 86%,
+      var(--void) 100%);
+}
+
+/* grão de papel */
+.hero::after{
+  content:"";
+  position:absolute; inset:0;
+  pointer-events:none;
+  z-index:9;
+  opacity:.4;
+  mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+
+/* faixa cromada líquida */
+.chrome-band{
+  position:absolute;
+  z-index:1;
+  top:32%;
+  left:-18%;
+  width:150%;
+  height:min(44vh,400px);
+  transform:rotate(-11deg) scaleY(.9);
+  opacity:0;
+  filter:blur(38px) saturate(1.25);
+  background:
+    conic-gradient(from 210deg at 30% 50%,
+      rgba(255,255,255,.00) 0deg,
+      rgba(198,210,230,.50) 42deg,
+      rgba(40,219,220,.28) 88deg,
+      rgba(255,255,255,.66) 132deg,
+      rgba(11,48,154,.10) 180deg,
+      rgba(198,210,230,.44) 236deg,
+      rgba(255,255,255,.18) 290deg,
+      rgba(255,255,255,.00) 360deg);
+  -webkit-mask-image:radial-gradient(70% 100% at 45% 50%, #000 12%, transparent 78%);
+          mask-image:radial-gradient(70% 100% at 45% 50%, #000 12%, transparent 78%);
+}
+.loaded .chrome-band{ opacity:.5; transition:opacity 2s ease .4s; }
+
+.hero-fade{
+  position:absolute; inset:auto 0 0 0; height:30vh; z-index:2;
+  pointer-events:none;
+  background:linear-gradient(to bottom, rgba(4,6,14,0) 0%, rgba(4,6,14,.55) 55%, var(--void) 100%);
+}
+
+/* ---------- topo ---------- */
+
+.topbar{
+  position:relative; z-index:8;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:1rem;
+  padding-top:1rem;
+  opacity:0; transform:translateY(-10px);
+}
+/* o topo so chega depois que a foto e o nome se assentam */
+.loaded .topbar{
+  opacity:1; transform:none;
+  transition:opacity .9s ease 1.55s, transform .9s var(--ease) 1.55s;
+}
+
+.brand{
+  display:flex; align-items:center; gap:.55rem;
+  font-family:var(--f-display);
+  font-weight:800; font-size:.9rem;
+  color:#fff;
+}
+.brand-mark{ width:22px; height:22px; flex:none; }
+.brand sup{
+  font-family:var(--f-mono); font-size:.5rem; font-weight:400;
+  color:rgba(255,255,255,.62); top:-.7em;
+}
+
+/* menu só aparece quando há largura para ele */
+.nav{ display:none; }
+
+.status{
+  display:inline-flex; align-items:center; gap:.4rem;
+  font-family:var(--f-mono); font-size:.5rem; letter-spacing:.06em;
+  text-transform:uppercase; color:rgba(237,241,248,.85);
+  padding:.32rem .6rem;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  white-space:nowrap;
+}
+.dot{
+  width:6px; height:6px; border-radius:50%;
+  background:var(--lime);
+  animation:pulse 2.6s ease-out infinite;
+}
+@keyframes pulse{
+  0%  { box-shadow:0 0 0 0 rgba(57,255,20,.55); }
+  70% { box-shadow:0 0 0 9px rgba(57,255,20,0); }
+  100%{ box-shadow:0 0 0 0 rgba(57,255,20,0); }
+}
+
+/* ============================================================
+   PALCO — o nome fica parado atrás do retrato
+   ============================================================ */
+
+.stage{
+  position:relative;
+  z-index:3;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  margin-top:1.4rem;
+}
+
+/* Uma linha passa ATRAS da cabeca, a outra por CIMA do peito: e o
+   recorte com alpha que permite o entrelacamento. */
+.bigname{
+  position:absolute;
+  left:0; right:0;
+  z-index:1;
+  text-align:center;
+  pointer-events:none;
+  user-select:none;
+  font-family:var(--f-display);
+  font-weight:800;
+  font-size:15vw;
+  line-height:.9;
+  letter-spacing:-.042em;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(255,255,255,.32);
+  overflow:hidden;
+  padding-top:.14em;
+}
+.bigname.back { top:4%;    z-index:1; }
+.bigname.front{ bottom:9%; z-index:3; -webkit-text-stroke:1.4px rgba(255,255,255,.5); }
+
+.bigname i{
+  display:block;
+  font-style:normal;
+  transform:translateY(106%);
+  background:linear-gradient(178deg,
+      rgba(255,255,255,.30) 0%,
+      rgba(255,255,255,.08) 42%,
+      rgba(7,31,99,.32) 100%);
+  -webkit-background-clip:text; background-clip:text;
+  text-shadow:
+     0 1px 0 rgba(255,255,255,.18),
+     0 -1px 0 rgba(4,10,32,.42),
+     0 22px 56px rgba(4,10,32,.40);
+}
+/* a linha da frente ganha sombra propria para descolar do tecido */
+.bigname.front i{
+  text-shadow:
+     0 1px 0 rgba(255,255,255,.22),
+     0 2px 30px rgba(4,10,32,.75),
+     0 10px 46px rgba(4,10,32,.55);
+}
+.loaded .bigname i{
+  transform:none;
+  transition:transform 1.25s var(--ease) var(--d,0s);
+}
+
+.portrait{
+  position:relative;
+  z-index:2;
+  width:86vw;
+  max-width:520px;
+  -webkit-mask-image:linear-gradient(to bottom, #000 0%, #000 74%, rgba(0,0,0,.62) 90%, transparent 100%);
+          mask-image:linear-gradient(to bottom, #000 0%, #000 74%, rgba(0,0,0,.62) 90%, transparent 100%);
+  clip-path:inset(100% 0 0 0);
+}
+.loaded .portrait{
+  clip-path:inset(0 0 0 0);
+  transition:clip-path 1.4s var(--ease) .45s;
+}
+.portrait img{ width:100%; height:auto; }
+
+/* ---------- rodapé da hero ---------- */
+
+.hero-foot{
+  position:relative; z-index:8;
+  display:flex; flex-direction:column;
+  gap:1.1rem;
+  padding-bottom:1.6rem;
+  opacity:0; transform:translateY(12px);
+}
+.loaded .hero-foot{
+  opacity:1; transform:none;
+  transition:opacity .9s ease 1.8s, transform .9s var(--ease) 1.8s;
+}
+.hero-foot .who{
+  font-family:var(--f-display); font-weight:600;
+  font-size:1rem; letter-spacing:-.02em; color:#fff; margin:0;
+}
+.hero-foot .who small{
+  display:block;
+  font-family:var(--f-mono); font-weight:400;
+  font-size:.6rem; letter-spacing:.14em; text-transform:uppercase;
+  color:rgba(237,241,248,.6); margin-top:.4rem;
+}
+.hero-foot .btn{ align-self:flex-start; }
+
+.scroll-cue{ display:none; }
+
+/* ---------- botões ---------- */
+
+.cta-row{ display:flex; flex-wrap:wrap; gap:.7rem; }
+
+.btn{
+  display:inline-flex; align-items:center; gap:.6rem;
+  font-family:var(--f-mono);
+  font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
+  padding:.9rem 1.4rem;
+  border-radius:999px;
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:transform .3s var(--ease), background-color .3s ease,
+             color .3s ease, border-color .3s ease;
+}
+.btn-primary{ background:var(--paper); color:#061033; box-shadow:0 12px 34px rgba(4,10,32,.45); }
+.btn-primary:hover{ background:var(--lime); color:#041400; transform:translateY(-2px); }
+.btn-ghost{ border-color:rgba(255,255,255,.32); color:#fff; }
+.btn-ghost:hover{ border-color:var(--cyan); color:var(--cyan); transform:translateY(-2px); }
+.btn .arrow{ transition:transform .3s var(--ease); }
+.btn:hover .arrow{ transform:translateX(4px); }
+
+/* ============================================================
+   SEÇÕES
+   ============================================================ */
+
+section{ position:relative; }
+
+.sec-head{
+  display:flex; flex-direction:column; gap:.6rem;
+  padding-block:3rem 1.5rem;
+}
+.sec-title{
+  font-family:var(--f-display);
+  font-weight:700;
+  font-size:clamp(1.75rem,7.5vw,3.4rem);
+  line-height:1;
+  letter-spacing:-.035em;
+  margin:0;
+  color:var(--paper);
+  text-wrap:balance;
+}
+.sec-title i{ font-style:normal; color:var(--muted-2); }
+
+.rv{ opacity:0; transform:translateY(22px); }
+.rv.in{
+  opacity:1; transform:none;
+  transition:opacity .8s ease var(--d,0s), transform .9s var(--ease) var(--d,0s);
+}
+
+/* ---------- manifesto ---------- */
+
+.manifesto{ background:var(--void); padding-bottom:3rem; }
+.manifesto-grid{ display:grid; gap:1.6rem; }
+.big-quote{
+  font-family:var(--f-display);
+  font-weight:300;
+  font-size:clamp(1.3rem,5.6vw,2.3rem);
+  line-height:1.22;
+  letter-spacing:-.028em;
+  margin:0;
+  color:var(--paper);
+  text-wrap:balance;
+}
+.big-quote b{ font-weight:700; color:#fff; }
+.big-quote mark{ background:none; color:var(--lime); font-weight:700; }
+.manifesto-side p{
+  color:var(--muted);
+  font-size:.98rem; line-height:1.65;
+  max-width:52ch;
+  margin:0 0 1rem;
+}
+.manifesto-side p:last-child{ margin-bottom:0; }
+.source{
+  font-family:var(--f-mono); font-size:.6rem; letter-spacing:.1em;
+  color:var(--muted-2); text-transform:uppercase;
+}
+
+/* ---------- painel: a conta do clique ---------- */
+
+.panel{
+  margin-top:2rem;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:linear-gradient(168deg, var(--void-3) 0%, var(--void-2) 100%);
+  box-shadow:0 30px 80px rgba(2,5,18,.5), inset 0 1px 0 rgba(255,255,255,.07);
+  overflow:hidden;
+  opacity:0; transform:translateY(24px);
+}
+.panel.in{ opacity:1; transform:none; transition:opacity .9s ease, transform 1s var(--ease); }
+
+.panel-head{
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+  gap:.5rem 1rem;
+  padding:.75rem 1rem;
+  border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.03);
+}
+.panel-head .file{
+  font-family:var(--f-mono); font-size:.68rem; color:rgba(237,241,248,.82);
+}
+.panel-head .file b{ color:var(--cyan); font-weight:400; }
+.panel-head .tag{
+  font-family:var(--f-mono); font-size:.58rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted);
+}
+
+.panel-body{ display:grid; }
+
+.waterfall{
+  padding:1rem;
+  border-bottom:1px solid var(--line);
+  display:flex; flex-direction:column; gap:.7rem;
+}
+.wf-row{
+  display:grid;
+  grid-template-columns:6.6rem 1fr 3.6rem;
+  align-items:center; gap:.55rem;
+  font-family:var(--f-mono); font-size:.64rem; color:var(--muted);
+}
+.wf-row .name{ color:rgba(237,241,248,.72); }
+.wf-track{
+  position:relative; height:7px; border-radius:3px;
+  background:rgba(255,255,255,.07); overflow:hidden;
+}
+.wf-bar{
+  position:absolute; top:0; bottom:0; left:0;
+  width:var(--w,20%);
+  border-radius:3px;
+  background:linear-gradient(90deg, var(--cyan), #6FF3F4);
+  transform:scaleX(0); transform-origin:left;
+}
+.wf-row.good .wf-bar{ background:linear-gradient(90deg, var(--lime), #A9FF8E); }
+.wf-row.loss .wf-bar{ background:linear-gradient(90deg, var(--loss), #FF9E92); }
+.wf-row.loss .val{ color:var(--loss); }
+.panel.in .wf-bar{ transform:scaleX(1); transition:transform .8s var(--ease) var(--d,0s); }
+.wf-row .val{ text-align:right; color:rgba(237,241,248,.72); }
+
+.panel-metrics{
+  padding:1rem;
+  display:flex; flex-direction:column; gap:1rem;
+}
+.metric-big{
+  font-family:var(--f-display); font-weight:800;
+  font-size:clamp(1.9rem,8vw,2.9rem);
+  line-height:1; letter-spacing:-.03em; color:#fff;
+  font-variant-numeric:tabular-nums;
+}
+.metric-big span{ font-size:.42em; color:var(--loss); }
+.metric-label{
+  font-family:var(--f-mono); font-size:.57rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); margin-top:.4rem;
+}
+
+.ring-wrap{ display:flex; align-items:center; gap:.75rem; }
+.ring{ width:50px; height:50px; flex:none; transform:rotate(-90deg); }
+.ring circle{ fill:none; stroke-width:4; stroke-linecap:round; }
+.ring .bg{ stroke:rgba(255,255,255,.1); }
+.ring .fg{ stroke:var(--loss); stroke-dasharray:138; stroke-dashoffset:138; }
+.panel.in .ring .fg{ stroke-dashoffset:var(--off,0); transition:stroke-dashoffset 1.4s var(--ease) .4s; }
+.ring-text b{
+  display:block; font-family:var(--f-display); font-weight:700;
+  font-size:1.1rem; color:#fff; line-height:1;
+}
+.ring-text small{
+  font-family:var(--f-mono); font-size:.55rem; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted);
+}
+
+.delta{
+  border-top:1px solid var(--line);
+  padding-top:.8rem;
+  font-family:var(--f-mono); font-size:.65rem; color:var(--muted);
+  display:flex; align-items:baseline; gap:.4rem; flex-wrap:wrap;
+}
+.delta .was{ text-decoration:line-through; opacity:.55; }
+.delta .now{ color:var(--lime); }
+
+/* ---------- números ---------- */
+
+.stats{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg, var(--void-2), var(--void));
+}
+.stats-grid{ display:grid; }
+.stat{
+  padding:1.5rem 0;
+  border-bottom:1px solid var(--line);
+}
+.stat:last-child{ border-bottom:0; }
+.stat:last-child{ border-bottom:0; }
+.stat-num{
+  font-family:var(--f-display);
+  font-weight:800;
+  font-size:clamp(2rem,9vw,3.6rem);
+  line-height:.95;
+  letter-spacing:-.045em;
+  color:#fff;
+  font-variant-numeric:tabular-nums;
+  display:flex; align-items:baseline; gap:.06em;
+}
+.stat-num .unit{ font-size:.34em; color:var(--cyan); letter-spacing:0; }
+.stat-num .pre{ font-size:.42em; color:var(--lime); }
+.stat-cap{
+  margin:.7rem 0 0;
+  font-family:var(--f-mono); font-size:.6rem; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--muted);
+  line-height:1.6;
+}
+
+/* ---------- cases ---------- */
+
+.cases{ background:var(--void); padding-bottom:3rem; }
+.case-grid{ display:grid; gap:.9rem; }
+
+.case{
+  position:relative;
+  display:flex; flex-direction:column;
+  padding:0;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:linear-gradient(165deg, var(--void-3) 0%, var(--void-2) 62%, var(--void) 100%);
+  overflow:hidden;
+  isolation:isolate;
+  transition:transform .5s var(--ease), border-color .4s ease, box-shadow .5s ease;
+}
+.case::before{
+  content:"";
+  position:absolute; inset:-1px; z-index:-1; opacity:0;
+  background:radial-gradient(78% 62% at 78% 4%, rgba(27,77,240,.5) 0%, rgba(11,48,154,.16) 42%, transparent 74%);
+  transition:opacity .55s ease;
+}
+.case:hover, .case:focus-within{
+  transform:translateY(-4px);
+  border-color:var(--line-2);
+  box-shadow:0 26px 60px rgba(2,5,18,.66);
+}
+.case:hover::before, .case:focus-within::before{ opacity:1; }
+
+/* preview real do projeto, capturado da pagina no ar */
+.case-shot{
+  position:relative;
+  aspect-ratio:16/10;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+  background:var(--void-3);
+}
+.case-shot img{
+  width:100%; height:100%;
+  object-fit:cover; object-position:top center;
+  transition:transform .8s var(--ease);
+}
+.case:hover .case-shot img{ transform:scale(1.045); }
+.case-shot::after{
+  content:"";
+  position:absolute; inset:0;
+  background:linear-gradient(to bottom, rgba(4,6,14,0) 55%, rgba(8,13,28,.75) 100%);
+  pointer-events:none;
+}
+
+.case-body{
+  display:flex; flex-direction:column; flex:1;
+  padding:1.3rem;
+}
+
+.case-top{
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+}
+.case-idx{ font-family:var(--f-mono); font-size:.62rem; letter-spacing:.14em; color:var(--muted-2); }
+.case-type{
+  font-family:var(--f-mono); font-size:.56rem; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--cyan);
+  border:1px solid rgba(40,219,220,.32);
+  border-radius:999px; padding:.26rem .6rem;
+  white-space:nowrap;
+}
+.case-name{
+  font-family:var(--f-display);
+  font-weight:700;
+  font-size:clamp(1.25rem,5.4vw,1.95rem);
+  line-height:1.06;
+  letter-spacing:-.032em;
+  margin:1.6rem 0 .5rem;
+  color:#fff;
+  text-wrap:balance;
+}
+.case-desc{
+  color:var(--muted);
+  font-size:.9rem; line-height:1.6;
+  margin:0; max-width:46ch;
+}
+.case-foot{ margin-top:auto; padding-top:1.4rem; }
+
+.case-facts{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-direction:column; gap:.5rem;
+}
+.case-facts li{
+  position:relative;
+  padding-left:1rem;
+  font-family:var(--f-mono);
+  font-size:.63rem; line-height:1.5;
+  color:var(--muted);
+}
+.case-facts li::before{
+  content:"";
+  position:absolute; left:0; top:.5em;
+  width:5px; height:5px; border-radius:1px;
+  background:var(--cyan);
+}
+.case-link{
+  margin-top:1rem;
+  padding-top:.9rem;
+  border-top:1px solid var(--line);
+  display:flex; align-items:baseline; justify-content:space-between;
+  gap:.6rem; flex-wrap:wrap;
+  font-family:var(--f-mono); font-size:.65rem;
+  letter-spacing:.08em; text-transform:uppercase;
+  color:var(--paper);
+  transition:color .3s ease;
+}
+.case-link .dom{
+  text-transform:none; letter-spacing:0;
+  color:var(--muted-2);
+  word-break:break-all;
+  transition:color .3s ease;
+}
+.case-link:hover{ color:var(--lime); }
+.case-link:hover .dom{ color:var(--cyan); }
+.case-link i{ font-style:normal; display:inline-block; transition:transform .3s var(--ease); }
+.case-link:hover i{ transform:translate(3px,-3px); }
+
+/* ---------- processo ---------- */
+
+.process{
+  background:linear-gradient(180deg, var(--void) 0%, var(--void-2) 40%, var(--void) 100%);
+  border-top:1px solid var(--line);
+  padding-bottom:3rem;
+}
+.timeline{
+  position:relative;
+  display:grid;
+  border-top:1px solid var(--line);
+}
+.timeline::after{
+  content:"";
+  position:absolute; left:0; top:-1px; height:1px; width:0;
+  background:linear-gradient(90deg,var(--cyan),var(--lime));
+  box-shadow:0 0 12px rgba(40,219,220,.7);
+}
+.timeline.in::after{ width:100%; transition:width 2s var(--ease) .25s; }
+
+.step{
+  padding:1.1rem 0 1.3rem;
+  border-bottom:1px solid var(--line);
+  position:relative;
+}
+.step:last-child{ border-bottom:0; }
+.step::before{
+  content:"";
+  position:absolute; top:-4px; left:0;
+  width:7px; height:7px; border-radius:50%;
+  background:var(--void);
+  border:1px solid var(--line-2);
+  transition:background-color .4s ease, border-color .4s ease, box-shadow .4s ease;
+}
+.timeline.in .step::before{
+  background:var(--cyan); border-color:var(--cyan);
+  box-shadow:0 0 10px rgba(40,219,220,.8);
+  transition-delay:calc(.3s + var(--i,0) * .28s);
+}
+.timeline.in .step:last-child::before{
+  background:var(--lime); border-color:var(--lime);
+  box-shadow:0 0 12px rgba(57,255,20,.8);
+}
+.step-h{
+  font-family:var(--f-mono); font-size:.68rem; letter-spacing:.1em;
+  color:var(--cyan); margin:0 0 .5rem;
+}
+.step:last-child .step-h{ color:var(--lime); }
+.step-t{
+  font-family:var(--f-display); font-weight:600;
+  font-size:1.02rem; line-height:1.2; letter-spacing:-.02em;
+  margin:0 0 .35rem; color:#fff;
+}
+.step-d{ font-size:.85rem; line-height:1.5; color:var(--muted); margin:0; }
+
+/* ---------- serviços ---------- */
+
+.services{ background:var(--void); padding-bottom:3rem; }
+.svc-list{ border-top:1px solid var(--line); }
+.svc{
+  display:grid;
+  grid-template-columns:2.6rem 1fr;
+  align-items:baseline;
+  gap:.35rem .8rem;
+  padding:1.1rem 0;
+  border-bottom:1px solid var(--line);
+  position:relative;
+}
+.svc::after{
+  content:"";
+  position:absolute; left:0; right:0; bottom:-1px; height:1px;
+  background:linear-gradient(90deg,var(--cyan),transparent 70%);
+  transform:scaleX(0); transform-origin:left;
+  transition:transform .6s var(--ease);
+}
+.svc:hover::after{ transform:scaleX(1); }
+.svc-n{ font-family:var(--f-mono); font-size:.62rem; color:var(--muted-2); }
+.svc-t{
+  font-family:var(--f-display); font-weight:600;
+  font-size:clamp(1.05rem,4.6vw,1.6rem);
+  letter-spacing:-.028em; color:#fff;
+}
+.svc-d{ grid-column:2; font-size:.88rem; color:var(--muted); line-height:1.55; margin:0; }
+.svc-tag{
+  grid-column:2;
+  font-family:var(--f-mono); font-size:.56rem; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted-2);
+}
+
+.stack{ display:flex; flex-wrap:wrap; gap:.45rem; padding-top:1rem; }
+.chip{
+  font-family:var(--f-mono); font-size:.62rem;
+  color:var(--muted);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:.4rem .8rem;
+  transition:color .3s ease, border-color .3s ease;
+}
+.chip:hover{ color:var(--cyan); border-color:rgba(40,219,220,.42); }
+
+/* ---------- CTA ---------- */
+
+.cta{
+  position:relative;
+  overflow:hidden;
+  border-top:1px solid var(--line);
+  background:
+    radial-gradient(130% 120% at 50% 118%,
+      var(--blue-hot) 0%, var(--blue) 26%, var(--blue-deep) 52%,
+      #050B1C 78%, var(--void) 100%);
+}
+.cta::after{
+  content:"";
+  position:absolute; inset:0; pointer-events:none;
+  opacity:.34; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n2)' opacity='.6'/%3E%3C/svg%3E");
+}
+.cta-inner{
+  position:relative; z-index:2;
+  padding-block:4rem 3rem;
+  display:flex; flex-direction:column; align-items:flex-start; gap:1.3rem;
+}
+.cta-title{
+  font-family:var(--f-display);
+  font-weight:800;
+  font-size:clamp(2.1rem,11vw,6rem);
+  line-height:.96;
+  letter-spacing:-.045em;
+  margin:0; color:#fff;
+  text-wrap:balance;
+  max-width:16ch;
+}
+.cta-sub{
+  color:rgba(237,241,248,.82);
+  font-size:1rem;
+  max-width:52ch;
+  margin:0;
+}
+
+/* ---------- rodapé ---------- */
+
+.foot{
+  position:relative; z-index:2;
+  border-top:1px solid rgba(255,255,255,.16);
+  display:flex; flex-direction:column; gap:.9rem;
+  padding-block:1.4rem 2rem;
+  font-family:var(--f-mono); font-size:.62rem; letter-spacing:.08em;
+  color:rgba(237,241,248,.6);
+  text-transform:uppercase;
+}
+.foot-links{ display:flex; gap:1.2rem; flex-wrap:wrap; }
+.foot-links a{ transition:color .25s ease; }
+.foot-links a:hover{ color:var(--lime); }
+
+/* ============================================================
+   ≥ 560px — cabem duas colunas
+   ============================================================ */
+
+@media (min-width:560px){
+  :root{ --pad:2rem; }
+
+  .stats-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .stat{ padding:1.8rem 1.3rem; border-right:1px solid var(--line); }
+  .stat:nth-child(2n+1){ padding-left:0; }
+  .stat:nth-child(2n){ border-right:0; }
+  .stat:nth-last-child(-n+2){ border-bottom:0; }
+
+  .timeline{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .step{ padding:1.3rem 1.3rem 1.6rem; border-right:1px solid var(--line); }
+  .step:nth-child(2n+1){ padding-left:0; }
+  .step:nth-child(2n){ border-right:0; }
+  .step:nth-last-child(-n+2){ border-bottom:0; }
+  .step::before{ left:0; }
+  .step:nth-child(2n)::before{ left:1.3rem; }
+
+  .panel-body{ grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr); }
+  .waterfall{ border-bottom:0; border-right:1px solid var(--line); }
+  .panel-metrics{ justify-content:space-between; }
+
+  .cta-inner{ padding-block:5rem 3.5rem; }
+  .foot{ flex-direction:row; align-items:center; justify-content:space-between; }
+}
+
+/* ============================================================
+   ≥ 760px — layout de duas colunas e menu visível
+   ============================================================ */
+
+@media (min-width:760px){
+  :root{ --pad:2.6rem; }
+
+  .status{ font-size:.62rem; letter-spacing:.1em; padding:.4rem .8rem; gap:.5rem; }
+  .nav{ display:flex; align-items:center; gap:1.4rem; }
+  .nav a{
+    font-family:var(--f-mono);
+    font-size:.66rem; letter-spacing:.14em; text-transform:uppercase;
+    color:rgba(237,241,248,.66);
+    padding:.35rem 0;
+    border-bottom:1px solid transparent;
+    transition:color .25s ease, border-color .25s ease;
+  }
+  .nav a:hover{ color:#fff; border-color:var(--cyan); }
+
+  .stage{ margin-top:2rem; }
+  .bigname{ font-size:16vw; }
+  .portrait{ width:56vw; max-width:540px; }
+
+  .hero-foot{
+    flex-direction:row; align-items:flex-end; justify-content:space-between;
+    gap:1.5rem; padding-bottom:2rem;
+  }
+  .hero-foot .who{ font-size:1.1rem; }
+
+  .sec-head{
+    flex-direction:row; align-items:baseline; justify-content:space-between;
+    gap:1.5rem; padding-block:4.5rem 2rem;
+  }
+  .manifesto-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:3rem; }
+  .case-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.1rem; }
+  .case-body{ padding:1.6rem; }
+  .case-name{ margin-top:1.6rem; }
+
+  .svc{
+    grid-template-columns:3rem minmax(0,1.15fr) minmax(0,1fr) auto;
+    align-items:center;
+    gap:2rem;
+    padding:1.5rem 0;
+    transition:padding-left .45s var(--ease);
+  }
+  .svc:hover{ padding-left:.8rem; }
+  .svc-d, .svc-tag{ grid-column:auto; }
+  .stack{ padding-top:1.6rem; }
+
+  .cta-inner{ align-items:center; text-align:center; }
+}
+
+/* ============================================================
+   ≥ 1080px — largura cheia
+   ============================================================ */
+
+@media (min-width:1080px){
+  :root{ --pad:4.5rem; }
+
+  .hero{ min-height:100svh; }
+  .stage{ flex:1; align-items:flex-end; min-height:min(66svh,640px); }
+  /* top so na linha de tras: com top E bottom o box estica e as duas
+     linhas acabam empilhadas no mesmo lugar */
+  .bigname{ font-size:min(14.5vw,12.5rem); }
+  .bigname.back { top:1vh; }
+  .bigname.front{ bottom:7%; }
+  .portrait{ width:38vw; max-width:560px; }
+
+  .scroll-cue{
+    display:inline-flex; align-items:center; gap:.55rem;
+    font-family:var(--f-mono); font-size:.6rem; letter-spacing:.16em;
+    text-transform:uppercase; color:rgba(237,241,248,.6);
+  }
+  .scroll-cue::after{
+    content:"";
+    width:34px; height:1px; background:rgba(237,241,248,.45);
+    transform-origin:left;
+    animation:cue 2.6s ease-in-out infinite;
+  }
+  @keyframes cue{
+    0%,100%{ transform:scaleX(.35); opacity:.5; }
+    50%    { transform:scaleX(1);   opacity:1; }
+  }
+
+  .stats-grid{ grid-template-columns:repeat(4,minmax(0,1fr)); }
+  .stat{ padding:2.6rem 1.7rem; border-right:1px solid var(--line); }
+  /* as regras de 560 usam pseudo-classe e venceriam por especificidade:
+     e preciso zera-las com o mesmo peso, nao com .stat sozinho */
+  .stat:nth-child(2n+1){ padding-left:1.7rem; }
+  .stat:nth-child(2n),
+  .stat:nth-last-child(-n+2){ border-bottom:0; }
+  .stat:nth-child(-n+4){ border-bottom:0; }
+  .stat:first-child{ padding-left:0; }
+  .stat:last-child{ border-right:0; }
+
+  .timeline{ grid-template-columns:repeat(6,minmax(0,1fr)); }
+  .step{ padding:1.8rem 1.2rem 2.2rem; border-bottom:0; border-right:1px solid var(--line); }
+  .step:nth-child(2n+1){ padding-left:1.2rem; }
+  .step:nth-child(2n){ border-right:1px solid var(--line); }
+  .step:first-child{ padding-left:0; }
+  .step:last-child{ border-right:0; }
+  .step::before{ left:1.2rem; }
+  .step:first-child::before{ left:0; }
+
+  .case.wide{
+    grid-column:span 2;
+    display:grid;
+    grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  }
+  .case.wide .case-shot{
+    aspect-ratio:auto;
+    height:100%;
+    border-bottom:0;
+    border-right:1px solid var(--line);
+  }
+  .case.wide .case-shot::after{
+    background:linear-gradient(to right, rgba(4,6,14,0) 70%, rgba(8,13,28,.6) 100%);
+  }
+  .case.wide .case-body{ padding:2.2rem; }
+  .case.wide .case-name{ font-size:2.3rem; }
+
+  .panel-body{ grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr); }
+}
+
+/* ============================================================
+   movimento reduzido
+   ============================================================ */
+
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  *, *::before, *::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+  .bigname i{ transform:none !important; }
+  .portrait{ clip-path:none !important; }
+  .topbar, .panel, .hero-foot, .rv{ opacity:1 !important; transform:none !important; }
+  .wf-bar{ transform:scaleX(1) !important; }
+  .ring .fg{ stroke-dashoffset:var(--off,0) !important; }
+  .timeline::after{ width:100% !important; }
+  .chrome-band{ opacity:.75 !important; }
+}
+</style>
+
+<!-- ============================================================ HERO -->
+<header class="hero" id="topo">
+  <div class="chrome-band" aria-hidden="true"></div>
+  <div class="hero-fade" aria-hidden="true"></div>
+
+  <div class="wrap topbar">
+    <a class="brand" href="#topo">
+      <img class="brand-mark" src="img/marca.webp" width="22" height="22" alt="">
+      Simplifica<sup>®</sup>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#cases">Cases</a>
+      <a href="#processo">Processo</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <span class="status"><span class="dot" aria-hidden="true"></span>2 vagas em setembro</span>
+  </div>
+
+  <h1 class="sr-only">Gabriel C Costa — Simplifica: sites e landing pages que vendem</h1>
+
+  <div class="stage">
+    <span class="bigname back" aria-hidden="true" style="--d:.28s"><i>GABRIEL</i></span>
+
+    <div class="portrait">
+      <img src="img/retrato.webp"
+           width="1000" height="1265"
+           alt="Gabriel C Costa, fundador da Simplifica">
+    </div>
+
+    <span class="bigname front" aria-hidden="true" style="--d:.5s"><i>C COSTA</i></span>
+  </div>
+
+  <div class="wrap hero-foot">
+    <p class="who">
+      Gabriel C Costa
+      <small>Fundador da Simplifica</small>
+    </p>
+    <a class="btn btn-primary" href="#cases">Ver os projetos <span class="arrow" aria-hidden="true">→</span></a>
+    <span class="scroll-cue">Role</span>
+  </div>
+</header>
+
+<!-- ============================================================ MANIFESTO -->
+<section class="manifesto">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title rv">O problema <i>não é o design.</i></h2>
+      <p class="eyebrow rv" style="--d:.1s">01 — O problema</p>
+    </div>
+
+    <div class="manifesto-grid">
+      <p class="big-quote rv">
+        O Google mede: <mark>53%</mark> das visitas em celular somem quando a
+        página passa de <b>3 segundos</b>. O tráfego foi pago, a pessoa clicou —
+        e a tela ficou branca.
+      </p>
+
+      <div class="manifesto-side rv" style="--d:.12s">
+        <p>
+          Tema pronto e construtor visual entregam um site que fica bonito na
+          tela do escritório e trava no celular do cliente. Aqui a página é
+          montada à mão, e a velocidade entra desde o primeiro dia.
+        </p>
+        <p class="source">Fonte: Google / Think with Google</p>
+      </div>
+    </div>
+
+      <div class="panel" aria-label="Quanto custa um site lento numa campanha paga">
+        <div class="panel-head">
+          <span class="file"><b>Exemplo</b> campanha de tráfego pago</span>
+          <span class="tag">1.000 cliques · R$ 2,40 cada</span>
+        </div>
+        <div class="panel-body">
+          <div class="waterfall">
+            <div class="wf-row">
+              <span class="name">Cliques pagos</span>
+              <span class="wf-track"><span class="wf-bar" style="--w:100%;--d:.10s"></span></span>
+              <span class="val">1.000</span>
+            </div>
+            <div class="wf-row good">
+              <span class="name">Veem a oferta</span>
+              <span class="wf-track"><span class="wf-bar" style="--w:47%;--d:.25s"></span></span>
+              <span class="val">470</span>
+            </div>
+            <div class="wf-row loss">
+              <span class="name">Desistem antes</span>
+              <span class="wf-track"><span class="wf-bar" style="--w:53%;--d:.40s"></span></span>
+              <span class="val">530</span>
+            </div>
+          </div>
+
+          <div class="panel-metrics">
+            <div>
+              <div class="metric-big"><span>R$</span> <span class="count" data-to="1272" data-dec="0">0</span></div>
+              <div class="metric-label">Pagos por uma tela branca</div>
+            </div>
+
+            <div class="ring-wrap">
+              <svg class="ring" viewBox="0 0 48 48" aria-hidden="true">
+                <circle class="bg" cx="24" cy="24" r="22"></circle>
+                <circle class="fg" cx="24" cy="24" r="22" style="--off:65"></circle>
+              </svg>
+              <span class="ring-text">
+                <b><span class="count" data-to="53" data-dec="0">0</span>%</b>
+                <small>Vão embora</small>
+              </span>
+            </div>
+
+            <div class="delta">
+              <span class="was">6,1 s</span>
+              <span aria-hidden="true">→</span>
+              <span class="now">0,6 s</span>
+              <span>&nbsp;·&nbsp; ninguém desiste na espera</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ NÚMEROS -->
+<section class="stats" aria-label="Números do estúdio">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat rv">
+        <div class="stat-num"><span class="count" data-to="48" data-dec="0">0</span><span class="unit">h</span></div>
+        <p class="stat-cap">Do briefing à<br>página no ar</p>
+      </div>
+      <div class="stat rv" style="--d:.08s">
+        <div class="stat-num"><span class="count" data-to="0.6" data-dec="1">0,0</span><span class="unit">s</span></div>
+        <p class="stat-cap">Para a página abrir<br>no celular</p>
+      </div>
+      <div class="stat rv" style="--d:.16s">
+        <div class="stat-num"><span class="pre">+</span><span class="count" data-to="37" data-dec="0">0</span><span class="unit">%</span></div>
+        <p class="stat-cap">Conversão média<br>depois da troca</p>
+      </div>
+      <div class="stat rv" style="--d:.24s">
+        <div class="stat-num"><span class="count" data-to="30" data-dec="0">0</span><span class="unit">dias</span></div>
+        <p class="stat-cap">De ajustes inclusos<br>depois da entrega</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CASES -->
+<section class="cases" id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title rv">Cases <i>selecionados</i></h2>
+      <p class="eyebrow rv" style="--d:.1s">02 — Projetos no ar</p>
+    </div>
+
+    <div class="case-grid">
+
+      <article class="case rv wide">
+        <div class="case-shot">
+          <img src="img/case-1.webp" width="640" height="400" loading="lazy" alt="Página inicial da Eureka Recreação">
+        </div>
+        <div class="case-body">
+          <div class="case-top">
+            <span class="case-idx">CASE 01</span>
+            <span class="case-type">Site institucional</span>
+          </div>
+          <h3 class="case-name">Eureka Recreação</h3>
+          <p class="case-desc">Recreação infantil em Rio Verde, GO. O serviço muda conforme a idade da criança, então o site separa festa, espaço kids, oficina e evento — e leva os quatro para o mesmo lugar: o orçamento no WhatsApp.</p>
+          <div class="case-foot">
+            <ul class="case-facts">
+              <li>Roteiro por faixa etária, de 0 a 12 anos</li>
+              <li>Domínio próprio</li>
+            </ul>
+            <a class="case-link" href="https://www.eurekarecreacao.com.br/" target="_blank" rel="noopener">
+              <span>Ver ao vivo</span>
+              <span class="dom">eurekarecreacao.com.br <i>↗</i></span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="case rv" style="--d:.08s">
+        <div class="case-shot">
+          <img src="img/case-2.webp" width="640" height="400" loading="lazy" alt="Marca do Nelore Steak House sobre fundo escuro">
+        </div>
+        <div class="case-body">
+          <div class="case-top">
+            <span class="case-idx">CASE 02</span>
+            <span class="case-type">Cardápio digital</span>
+          </div>
+          <h3 class="case-name">Nelore Steak House</h3>
+          <p class="case-desc">Cardápio que abre no celular do cliente sem aplicativo. O pedido vai sendo montado enquanto a pessoa navega pelos cortes.</p>
+          <div class="case-foot">
+            <ul class="case-facts">
+              <li>Pedido montado na própria página</li>
+              <li>Feito para abrir no celular</li>
+            </ul>
+            <a class="case-link" href="https://nelore-steak-house.vercel.app/" target="_blank" rel="noopener">
+              <span>Ver ao vivo</span>
+              <span class="dom">nelore-steak-house.vercel.app <i>↗</i></span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="case rv">
+        <div class="case-shot">
+          <img src="img/case-3.webp" width="640" height="400" loading="lazy" alt="Página inicial do DJ Jay">
+        </div>
+        <div class="case-body">
+          <div class="case-top">
+            <span class="case-idx">CASE 03</span>
+            <span class="case-type">Site de artista</span>
+          </div>
+          <h3 class="case-name">DJ Jay</h3>
+          <p class="case-desc">Os sets tocam direto do Spotify dentro da página, a agenda mostra onde ele vai estar e quem quer contratar tem um caminho curto.</p>
+          <div class="case-foot">
+            <ul class="case-facts">
+              <li>Sets tocando direto do Spotify</li>
+              <li>Agenda e contato de contratação</li>
+            </ul>
+            <a class="case-link" href="https://dj-jay-dun.vercel.app/" target="_blank" rel="noopener">
+              <span>Ver ao vivo</span>
+              <span class="dom">dj-jay-dun.vercel.app <i>↗</i></span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="case rv" style="--d:.08s">
+        <div class="case-shot">
+          <img src="img/case-4.webp" width="640" height="400" loading="lazy" alt="Vitrine de tênis da SNKRS">
+        </div>
+        <div class="case-body">
+          <div class="case-top">
+            <span class="case-idx">CASE 04</span>
+            <span class="case-type">Catálogo de produtos</span>
+          </div>
+          <h3 class="case-name">SNKRS</h3>
+          <p class="case-desc">Vitrine de tênis com carrinho na própria página. Um lugar organizado para mandar quem chegou pelas redes.</p>
+          <div class="case-foot">
+            <ul class="case-facts">
+              <li>Carrinho sem sair da página</li>
+              <li>Pronta para trocar de coleção</li>
+            </ul>
+            <a class="case-link" href="https://sneaker-landing-page-fawn.vercel.app/" target="_blank" rel="noopener">
+              <span>Ver ao vivo</span>
+              <span class="dom">sneaker-landing-page-fawn.vercel.app <i>↗</i></span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="case rv">
+        <div class="case-shot">
+          <img src="img/case-5.webp" width="640" height="400" loading="lazy" alt="Página de links oficiais da Simplifica">
+        </div>
+        <div class="case-body">
+          <div class="case-top">
+            <span class="case-idx">CASE 05</span>
+            <span class="case-type">Página de links</span>
+          </div>
+          <h3 class="case-name">Links da Simplifica</h3>
+          <p class="case-desc">A nossa própria página de links, em domínio próprio no lugar de um perfil alugado. Cada botão abre uma conversa já começada.</p>
+          <div class="case-foot">
+            <ul class="case-facts">
+              <li>Botões que abrem o WhatsApp com a mensagem pronta</li>
+              <li>Caminhos separados para agência e empresa</li>
+            </ul>
+            <a class="case-link" href="https://link.usesimplifica.com.br/" target="_blank" rel="noopener">
+              <span>Ver ao vivo</span>
+              <span class="dom">link.usesimplifica.com.br <i>↗</i></span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ PROCESSO -->
+<section class="process" id="processo">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title rv">48 horas, <i>hora a hora</i></h2>
+      <p class="eyebrow rv" style="--d:.1s">03 — Processo</p>
+    </div>
+
+    <div class="timeline">
+      <div class="step" style="--i:0">
+        <p class="step-h">H+00</p>
+        <h3 class="step-t">Briefing</h3>
+        <p class="step-d">Uma call de 40 minutos: oferta, público e a ação que a página precisa gerar.</p>
+      </div>
+      <div class="step" style="--i:1">
+        <p class="step-h">H+04</p>
+        <h3 class="step-t">Estrutura e texto</h3>
+        <p class="step-d">Ordem dos blocos e texto final aprovados por você.</p>
+      </div>
+      <div class="step" style="--i:2">
+        <p class="step-h">H+18</p>
+        <h3 class="step-t">Design</h3>
+        <p class="step-d">Layout desenhado sobre o texto aprovado, no padrão da sua marca.</p>
+      </div>
+      <div class="step" style="--i:3">
+        <p class="step-h">H+34</p>
+        <h3 class="step-t">Montagem</h3>
+        <p class="step-d">Página montada à mão. É daí que vem a velocidade.</p>
+      </div>
+      <div class="step" style="--i:4">
+        <p class="step-h">H+44</p>
+        <h3 class="step-t">Testes</h3>
+        <p class="step-d">Aberta em celular e em conexão fraca. Se demorar, não sobe.</p>
+      </div>
+      <div class="step" style="--i:5">
+        <p class="step-h">H+48</p>
+        <h3 class="step-t">No ar</h3>
+        <p class="step-d">Domínio, formulário e pixels configurados. Link e acessos na sua mão.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ SERVIÇOS -->
+<section class="services" id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title rv">O que <i>fazemos</i></h2>
+      <p class="eyebrow rv" style="--d:.1s">04 — Serviços</p>
+    </div>
+
+    <div class="svc-list">
+      <div class="svc rv">
+        <span class="svc-n">/ 01</span>
+        <span class="svc-t">Landing pages</span>
+        <p class="svc-d">Página única para campanha paga, com texto e design. Pronta em 48 horas.</p>
+        <span class="svc-tag">48 horas</span>
+      </div>
+      <div class="svc rv" style="--d:.05s">
+        <span class="svc-n">/ 02</span>
+        <span class="svc-t">Sites institucionais</span>
+        <p class="svc-d">Presença completa, com estrutura para aparecer no Google.</p>
+        <span class="svc-tag">2 a 3 semanas</span>
+      </div>
+      <div class="svc rv" style="--d:.10s">
+        <span class="svc-n">/ 03</span>
+        <span class="svc-t">Cardápios e catálogos</span>
+        <p class="svc-d">Cardápio ou vitrine que abre no celular, sem aplicativo.</p>
+        <span class="svc-tag">1 semana</span>
+      </div>
+      <div class="svc rv" style="--d:.15s">
+        <span class="svc-n">/ 04</span>
+        <span class="svc-t">Resgate de site lento</span>
+        <p class="svc-d">Diagnóstico e correção de velocidade em site que já está no ar.</p>
+        <span class="svc-tag">Diagnóstico grátis</span>
+      </div>
+      <div class="svc rv" style="--d:.20s">
+        <span class="svc-n">/ 05</span>
+        <span class="svc-t">Parceria white-label</span>
+        <p class="svc-d">Somos o time de produção da sua agência. Sua marca em cada entrega.</p>
+        <span class="svc-tag">Mensal</span>
+      </div>
+    </div>
+
+    <p class="eyebrow rv" style="padding-top:2rem">Vem em toda entrega</p>
+    <div class="stack rv">
+      <span class="chip">Domínio configurado</span>
+      <span class="chip">Formulário no WhatsApp</span>
+      <span class="chip">Pixel do Meta e do Google</span>
+      <span class="chip">Relatório de acessos</span>
+      <span class="chip">Hospedagem no primeiro ano</span>
+      <span class="chip">30 dias de ajustes</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ CTA -->
+<section class="cta" id="contato">
+  <div class="wrap cta-inner">
+    <p class="eyebrow rv" style="color:rgba(237,241,248,.72)">05 — Próximo passo</p>
+    <h2 class="cta-title rv" style="--d:.06s">Manda o link do seu site.</h2>
+    <p class="cta-sub rv" style="--d:.12s">
+      Em até 24 horas você recebe quanto tempo o seu site demora para abrir e
+      quantos visitantes isso custa por mês. Sem reunião.
+    </p>
+    <div class="cta-row rv" style="--d:.18s; justify-content:center">
+      <a class="btn btn-primary" href="https://wa.me/5564996548108?text=Quero%20o%20diagn%C3%B3stico%20de%20velocidade%20do%20meu%20site." target="_blank" rel="noopener">
+        Pedir diagnóstico <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="btn btn-ghost" href="https://instagram.com/usesimplifica" target="_blank" rel="noopener">@usesimplifica</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="foot">
+      <span>© 2026 Simplifica — Sites e landing pages que vendem</span>
+      <span class="foot-links">
+        <a href="https://wa.me/5564996548108" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/usesimplifica" target="_blank" rel="noopener">Instagram</a>
+        <a href="#topo">Voltar ao topo</a>
+      </span>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  "use strict";
+
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- sequência de abertura: a hero "carrega" como uma página rápida ---- */
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){
+      document.documentElement.classList.add("loaded");
+    });
+  });
+
+  /* ---- contadores ---- */
+  function runCount(el){
+    if (el.dataset.done) return;
+    el.dataset.done = "1";
+    var to  = parseFloat(el.dataset.to);
+    var dec = parseInt(el.dataset.dec, 10) || 0;
+
+    var fmt = function(v){
+      return v.toFixed(dec).replace(".", ",");
+    };
+
+    if (reduced){ el.textContent = fmt(to); return; }
+
+    var dur = 1400, t0 = null;
+    function frame(t){
+      if (t0 === null) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      var e = 1 - Math.pow(1 - p, 4);          // easeOutQuart
+      el.textContent = fmt(to * e);
+      if (p < 1) requestAnimationFrame(frame);
+      else el.textContent = fmt(to);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  /* ---- revelações no scroll ---- */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      el.classList.add("in");
+
+      var counts = el.querySelectorAll(".count");
+      for (var i = 0; i < counts.length; i++) runCount(counts[i]);
+
+      io.unobserve(el);
+    });
+  }, { threshold: 0.18, rootMargin: "0px 0px -8% 0px" });
+
+  var targets = document.querySelectorAll(".rv, .case, .timeline, .panel");
+  for (var i = 0; i < targets.length; i++) io.observe(targets[i]);
+
+  /* ---- paralaxe leve da faixa cromada (só em telas grandes) ---- */
+  if (!reduced && window.innerWidth > 1080){
+    var band = document.querySelector(".chrome-band");
+    var hero = document.querySelector(".hero");
+    var raf = null;
+    window.addEventListener("scroll", function(){
+      if (raf) return;
+      raf = requestAnimationFrame(function(){
+        raf = null;
+        var y = window.scrollY;
+        if (y > hero.offsetHeight) return;
+        band.style.translate = "0 " + (y * 0.16) + "px";
+      });
+    }, { passive: true });
+  }
+})();
+</script>
+
+</body>
+</html>

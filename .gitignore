@@ -1,0 +1,18 @@
+# Vercel
+.vercel
+
+# Editor
+.vscode/
+
+# Recortes intermediários, superados por fontes/perfil_nobg.png
+/perfil-recorte.png
+/perfil-recorte.webp
+/perfil-web.webp
+
+# As fontes versionadas ficam em fontes/; estas são cópias soltas na raiz
+/perfil.jfif
+/perfil_nobg.png
+
+# Sistema
+Thumbs.db
+.DS_Store
