@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#04060E">
 
-<title>Simplifica — Sites e landing pages que vendem</title>
+<title>Landing pages no ar em 48 horas — Simplifica</title>
 <meta name="description" content="Estúdio de Rio Verde, GO. Landing pages, sites e cardápios digitais que abrem em menos de um segundo. Do briefing ao ar em 48 horas.">
 <link rel="canonical" href="https://usesimplifica.com.br/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
@@ -16,14 +16,14 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Simplifica">
-<meta property="og:title" content="Simplifica — Sites e landing pages que vendem">
+<meta property="og:title" content="Landing pages no ar em 48 horas — Simplifica">
 <meta property="og:description" content="Estúdio de Rio Verde, GO. Landing pages, sites e cardápios digitais que abrem em menos de um segundo. Do briefing ao ar em 48 horas.">
 <meta property="og:url" content="https://usesimplifica.com.br/">
 <meta property="og:image" content="https://usesimplifica.com.br/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Simplifica — Sites e landing pages que vendem">
+<meta name="twitter:title" content="Landing pages no ar em 48 horas — Simplifica">
 <meta name="twitter:description" content="Estúdio de Rio Verde, GO. Landing pages, sites e cardápios digitais que abrem em menos de um segundo. Do briefing ao ar em 48 horas.">
 <meta name="twitter:image" content="https://usesimplifica.com.br/og.jpg">
 
@@ -47,8 +47,8 @@
    "url": "https://usesimplifica.com.br/",
    "image": "https://usesimplifica.com.br/og.jpg",
    "logo": "https://usesimplifica.com.br/icon-512.png",
-   "description": "Estúdio de criação de sites em Rio Verde, GO. Landing pages, sites institucionais, cardápios digitais, catálogos web e páginas de links que abrem em menos de um segundo. Do briefing ao ar em 48 horas.",
-   "slogan": "Sites e landing pages que vendem",
+   "description": "Landing pages para campanha de tráfego pago, no ar em 48 horas. Montadas à mão em Rio Verde, GO, para gestores de tráfego e para empresas que anunciam. A partir de R$ 1.500.",
+   "slogan": "Landing pages no ar em 48 horas",
    "priceRange": "$$",
    "telephone": "+5564996548108",
    "knowsLanguage": "pt-BR",
@@ -85,7 +85,7 @@
    ],
    "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Serviços",
+    "name": "Serviços — landing page é o principal",
     "itemListElement": [
      {
       "@type": "Offer",
@@ -243,8 +243,8 @@
    "@type": "WebPage",
    "@id": "https://usesimplifica.com.br/#pagina",
    "url": "https://usesimplifica.com.br/",
-   "name": "Simplifica — Sites e landing pages que vendem",
-   "description": "Estúdio de criação de sites em Rio Verde, GO. Landing pages, sites institucionais, cardápios digitais, catálogos web e páginas de links que abrem em menos de um segundo. Do briefing ao ar em 48 horas.",
+   "name": "Landing pages no ar em 48 horas — Simplifica",
+   "description": "Landing pages para campanha de tráfego pago, no ar em 48 horas. Montadas à mão em Rio Verde, GO, para gestores de tráfego e para empresas que anunciam. A partir de R$ 1.500.",
    "isPartOf": {
     "@id": "https://usesimplifica.com.br/#site"
    },
@@ -545,8 +545,11 @@ a{ color:inherit; text-decoration:none; }
   display:flex;
   justify-content:center;
   align-items:flex-end;
-  margin-top:1.4rem;
+  margin:1.4rem 0 0;
+  font-size:inherit;
+  font-weight:inherit;
 }
+.stage .portrait{ display:block; }
 
 /* Uma linha passa ATRAS da cabeca, a outra por CIMA do peito: e o
    recorte com alpha que permite o entrelacamento. */
@@ -616,10 +619,17 @@ a{ color:inherit; text-decoration:none; }
 .hero-foot{
   position:relative; z-index:8;
   display:flex; flex-direction:column;
-  gap:1.1rem;
+  gap:1.4rem;
   padding-bottom:1.6rem;
   opacity:0; transform:translateY(12px);
 }
+.hero-lede{
+  font-size:1rem; line-height:1.55;
+  color:rgba(237,241,248,.86);
+  margin:0 0 .9rem; max-width:34ch;
+}
+.hero-lede b{ color:#fff; font-weight:700; }
+.hero-acao{ display:flex; flex-wrap:wrap; gap:.7rem; }
 .loaded .hero-foot{
   opacity:1; transform:none;
   transition:opacity .9s ease 1.8s, transform .9s var(--ease) 1.8s;
@@ -815,6 +825,42 @@ section{ position:relative; }
 }
 .delta .was{ text-decoration:line-through; opacity:.55; }
 .delta .now{ color:var(--lime); }
+
+/* ---------- dois caminhos: gestor e empresa ---------- */
+
+.paths{ background:var(--void); padding-bottom:3rem; }
+.path-grid{ display:grid; gap:1rem; }
+.path{
+  display:flex; flex-direction:column; gap:1rem;
+  padding:1.5rem;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:linear-gradient(165deg, var(--void-3) 0%, var(--void-2) 70%, var(--void) 100%);
+  transition:border-color .4s ease, transform .5s var(--ease);
+}
+.path:hover{ border-color:var(--line-2); transform:translateY(-3px); }
+.path-quem{
+  font-family:var(--f-mono); font-size:.6rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--cyan); margin:0;
+}
+.path-t{
+  font-family:var(--f-display); font-weight:700;
+  font-size:clamp(1.3rem,5vw,1.75rem); line-height:1.1;
+  letter-spacing:-.03em; margin:0; color:#fff;
+  text-wrap:balance;
+}
+.path ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.6rem; }
+.path li{
+  position:relative; padding-left:1.1rem;
+  font-size:.92rem; line-height:1.5; color:var(--muted);
+}
+.path li::before{
+  content:""; position:absolute; left:0; top:.55em;
+  width:5px; height:5px; border-radius:1px; background:var(--cyan);
+}
+.path .btn{ align-self:flex-start; margin-top:auto; }
+.path.empresa li::before{ background:var(--lime); }
+.path.empresa .path-quem{ color:var(--lime); }
 
 /* ---------- números ---------- */
 
@@ -1187,8 +1233,11 @@ section{ position:relative; }
 
   .hero-foot{
     flex-direction:row; align-items:flex-end; justify-content:space-between;
-    gap:1.5rem; padding-bottom:2rem;
+    gap:2.5rem; padding-bottom:2rem;
   }
+  .hero-lede{ font-size:1.06rem; max-width:42ch; }
+  .path-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.2rem; }
+  .path{ padding:2rem; }
   .hero-foot .who{ font-size:1.1rem; }
 
   .sec-head{
@@ -1327,27 +1376,33 @@ section{ position:relative; }
     <span class="status"><span class="dot" aria-hidden="true"></span>Aceitando novos projetos</span>
   </div>
 
-  <h1 class="sr-only">Gabriel C Costa — Simplifica: sites e landing pages que vendem</h1>
+  <h1 class="stage">
+    <span class="bigname back" style="--d:.25s"><i>LANDING</i></span>
 
-  <div class="stage">
-    <span class="bigname back" aria-hidden="true" style="--d:.28s"><i>GABRIEL</i></span>
-
-    <div class="portrait">
+    <span class="portrait">
       <img src="img/retrato.webp"
            width="1000" height="1265"
-           alt="Gabriel C Costa, fundador da Simplifica">
-    </div>
+           alt="">
+    </span>
 
-    <span class="bigname front" aria-hidden="true" style="--d:.5s"><i>C COSTA</i></span>
-  </div>
+    <span class="bigname front" style="--d:.42s"><i>PAGES</i></span>
+  </h1>
 
   <div class="wrap hero-foot">
-    <p class="who">
-      Gabriel C Costa
-      <small>Fundador da Simplifica</small>
-    </p>
-    <a class="btn btn-primary" href="#cases">Ver os projetos <span class="arrow" aria-hidden="true">→</span></a>
-    <span class="scroll-cue">Role</span>
+    <div>
+      <p class="hero-lede">
+        No ar em <b>48 horas</b>, montada à mão para abrir antes de a pessoa
+        desistir. Para gestores de tráfego e para empresas que anunciam.
+      </p>
+      <p class="who">
+        Gabriel C Costa
+        <small>Fundador da Simplifica · Rio Verde, GO</small>
+      </p>
+    </div>
+    <div class="hero-acao">
+      <a class="btn btn-primary" href="https://wa.me/5564996548108?text=Vim%20do%20site%20e%20quero%20uma%20landing%20page." target="_blank" rel="noopener">Quero uma landing page <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#cases">Ver projetos no ar</a>
+    </div>
   </div>
 </header>
 
@@ -1355,7 +1410,7 @@ section{ position:relative; }
 <section class="manifesto">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="sec-title rv">O problema <i>não é o design.</i></h2>
+      <h2 class="sec-title rv">O clique você já pagou. <i>A página perde.</i></h2>
       <p class="eyebrow rv" style="--d:.1s">01 — O problema</p>
     </div>
 
@@ -1458,12 +1513,48 @@ section{ position:relative; }
   </div>
 </section>
 
+<!-- ============================================================ CAMINHOS -->
+<section class="paths" id="para-quem">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title rv">Duas portas, <i>o mesmo produto.</i></h2>
+      <p class="eyebrow rv" style="--d:.1s">02 — Para quem</p>
+    </div>
+
+    <div class="path-grid">
+      <article class="path rv">
+        <p class="path-quem">Você gerencia tráfego</p>
+        <h3 class="path-t">A página fica pronta antes da campanha subir.</h3>
+        <ul>
+          <li>Sua marca na entrega, não a nossa. O cliente é seu.</li>
+          <li>Tabela de parceiro, com margem para você revender.</li>
+          <li>Pixel do Meta e do Google e eventos de conversão já configurados.</li>
+          <li>Briefing por formulário, sem call obrigatória.</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://wa.me/5564996548108?text=Sou%20gestor%20de%20tr%C3%A1fego%20e%20quero%20a%20tabela%20de%20parceiro." target="_blank" rel="noopener">Ver tabela de parceiro <span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="path empresa rv" style="--d:.08s">
+        <p class="path-quem">Você é a empresa que anuncia</p>
+        <h3 class="path-t">Você paga pelo clique. A página precisa aproveitar.</h3>
+        <ul>
+          <li>Texto, design e montagem inclusos — você não escreve nada.</li>
+          <li>Os contatos caem direto no WhatsApp de quem atende.</li>
+          <li>A partir de R$ 1.500, com prazo e escopo fechados antes de começar.</li>
+          <li>30 dias de ajustes depois da entrega.</li>
+        </ul>
+        <a class="btn btn-primary" href="https://wa.me/5564996548108?text=Quero%20uma%20landing%20page%20para%20a%20minha%20empresa." target="_blank" rel="noopener">Quero uma landing page <span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ============================================================ CASES -->
 <section class="cases" id="cases">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="sec-title rv">Cases <i>selecionados</i></h2>
-      <p class="eyebrow rv" style="--d:.1s">02 — Projetos no ar</p>
+      <h2 class="sec-title rv">Feito à mão, <i>no ar, com link.</i></h2>
+      <p class="eyebrow rv" style="--d:.1s">03 — Projetos no ar</p>
     </div>
 
     <div class="case-grid">
@@ -1598,7 +1689,7 @@ section{ position:relative; }
   <div class="wrap">
     <div class="sec-head">
       <h2 class="sec-title rv">48 horas, <i>hora a hora</i></h2>
-      <p class="eyebrow rv" style="--d:.1s">03 — Processo</p>
+      <p class="eyebrow rv" style="--d:.1s">04 — Processo</p>
     </div>
 
     <div class="timeline">
@@ -1641,8 +1732,8 @@ section{ position:relative; }
 <section class="services" id="servicos">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="sec-title rv">O que <i>fazemos</i></h2>
-      <p class="eyebrow rv" style="--d:.1s">04 — Serviços</p>
+      <h2 class="sec-title rv">Landing page é o foco. <i>Não é tudo.</i></h2>
+      <p class="eyebrow rv" style="--d:.1s">05 — Também fazemos</p>
     </div>
 
     <div class="svc-list">
@@ -1694,15 +1785,15 @@ section{ position:relative; }
 <!-- ============================================================ CTA -->
 <section class="cta" id="contato">
   <div class="wrap cta-inner">
-    <p class="eyebrow rv" style="color:rgba(237,241,248,.72)">05 — Próximo passo</p>
-    <h2 class="cta-title rv" style="--d:.06s">Manda o link do seu site.</h2>
+    <p class="eyebrow rv" style="color:rgba(237,241,248,.72)">06 — Próximo passo</p>
+    <h2 class="cta-title rv" style="--d:.06s">A próxima campanha sobe quando?</h2>
     <p class="cta-sub rv" style="--d:.12s">
-      Em até 24 horas você recebe quanto tempo o seu site demora para abrir e
-      quantos visitantes isso custa por mês. Sem reunião.
+      Manda a oferta e o prazo. Em até 24 horas você recebe escopo, valor e
+      data de entrega — sem reunião e sem proposta de dez páginas.
     </p>
     <div class="cta-row rv" style="--d:.18s; justify-content:center">
       <a class="btn btn-primary" href="https://wa.me/5564996548108?text=Quero%20o%20diagn%C3%B3stico%20de%20velocidade%20do%20meu%20site." target="_blank" rel="noopener">
-        Pedir diagnóstico <span class="arrow" aria-hidden="true">→</span>
+        Quero uma landing page <span class="arrow" aria-hidden="true">→</span>
       </a>
       <a class="btn btn-ghost" href="https://instagram.com/usesimplifica" target="_blank" rel="noopener">@usesimplifica</a>
     </div>
@@ -1710,7 +1801,7 @@ section{ position:relative; }
 
   <div class="wrap">
     <div class="foot">
-      <span>© 2026 Simplifica — Sites e landing pages que vendem</span>
+      <span>© 2026 Landing pages no ar em 48 horas — Simplifica</span>
       <span class="foot-links">
         <a href="https://wa.me/5564996548108" target="_blank" rel="noopener">WhatsApp</a>
         <a href="https://instagram.com/usesimplifica" target="_blank" rel="noopener">Instagram</a>
