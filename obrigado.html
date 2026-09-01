@@ -13,11 +13,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap">
 
-<!-- Google tag: cole aqui o snippet do Google Ads (AW-...) e/ou do GA4 (G-...).
-     A conversão é disparada mais abaixo, no bloco de script. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
+/* ================= MEDIÇÃO =================================
+   Cole os IDs abaixo. Vazios, nada é carregado e o site roda igual.
+
+   ga4    Analytics: Administrador > Fluxos de dados > seu site
+          formato G-XXXXXXXXXX
+   ads    Google Ads: Metas > Conversões > Tag do Google
+          formato AW-XXXXXXXXX
+   rotulo Google Ads: a ação de conversão que você criou, o pedaço
+          depois da barra no trecho send_to
+   =========================================================== */
+window.MEDICAO = { ga4: "", ads: "", rotulo: "" };
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+(function(){
+  var ids = [MEDICAO.ga4, MEDICAO.ads].filter(Boolean);
+  if (!ids.length) return;
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(ids[0]);
+  document.head.appendChild(s);
+  gtag("js", new Date());
+  ids.forEach(function(id){ gtag("config", id); });
+})();
 </script>
 
 <style>
@@ -149,9 +169,10 @@ h1{
 (function(){
   "use strict";
 
-  /* Conversão do Google Ads. Troque AW-XXXXXXXXX/XXXXXXXX pelo rótulo que
-     o Ads gera em Ferramentas → Conversões → nova ação → "Site". */
-  gtag("event", "conversion", { send_to: "AW-XXXXXXXXX/XXXXXXXX" });
+  /* dispara a conversão só quando os IDs estiverem preenchidos */
+  if (MEDICAO.ads && MEDICAO.rotulo){
+    gtag("event", "conversion", { send_to: MEDICAO.ads + "/" + MEDICAO.rotulo });
+  }
   gtag("event", "generate_lead");
 
   /* personaliza com o nome deixado no formulário */

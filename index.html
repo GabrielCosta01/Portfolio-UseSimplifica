@@ -5,11 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#04060E">
 
-<!-- Google tag: cole aqui o snippet do Google Ads (AW-...) e/ou do GA4 (G-...).
-     Sem ele o site funciona igual; o que falta é só a medição. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
+/* ================= MEDIÇÃO =================================
+   Cole os IDs abaixo. Vazios, nada é carregado e o site roda igual.
+
+   ga4    Analytics: Administrador > Fluxos de dados > seu site
+          formato G-XXXXXXXXXX
+   ads    Google Ads: Metas > Conversões > Tag do Google
+          formato AW-XXXXXXXXX
+   rotulo Google Ads: a ação de conversão que você criou, o pedaço
+          depois da barra no trecho send_to
+   =========================================================== */
+window.MEDICAO = { ga4: "", ads: "", rotulo: "" };
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+(function(){
+  var ids = [MEDICAO.ga4, MEDICAO.ads].filter(Boolean);
+  if (!ids.length) return;
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(ids[0]);
+  document.head.appendChild(s);
+  gtag("js", new Date());
+  ids.forEach(function(id){ gtag("config", id); });
+})();
 </script>
 
 <title>Landing pages no ar em 48 horas | Simplifica</title>
