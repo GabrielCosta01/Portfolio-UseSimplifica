@@ -1,4 +1,61 @@
+# Simplifica — https://usesimplifica.com.br
+# Buscadores tradicionais: tudo liberado.
 User-agent: *
+Allow: /
+
+# ---------------------------------------------------------------
+# Robôs de IA. Desde 2025 treino e busca são robôs diferentes:
+# liberar os de busca é o que permite a Simplifica ser CITADA em
+# respostas do ChatGPT, Claude e Perplexity. Se um dia você quiser
+# recusar o uso do conteúdo para TREINO sem perder as citações,
+# troque para "Disallow: /" apenas nos marcados com [treino].
+# ---------------------------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google — não afeta o ranqueamento no Google Search
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft / Bing
+User-agent: bingbot
+Allow: /
+
+# Common Crawl [treino]
+User-agent: CCBot
+Allow: /
+
+# Apple [treino]
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta [treino]
+User-agent: meta-externalagent
 Allow: /
 
 Sitemap: https://usesimplifica.com.br/sitemap.xml

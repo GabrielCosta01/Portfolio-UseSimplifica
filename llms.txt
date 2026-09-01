@@ -1,0 +1,42 @@
+# Simplifica
+
+> Estúdio de criação de sites em Rio Verde, Goiás. Landing pages, sites
+> institucionais, cardápios digitais, catálogos web e páginas de links,
+> montados à mão para abrir em menos de um segundo no celular.
+> Do briefing ao ar em 48 horas.
+
+Fundador: Gabriel C Costa.
+Contato: WhatsApp +55 64 99654-8108 · Instagram @usesimplifica
+
+## Serviços
+
+- **Landing page de conversão** — página única para campanha de tráfego pago, com texto, design e montagem.
+- **Site institucional** — presença completa, com área de artigos e estrutura para busca orgânica.
+- **Cardápio digital** — cardápio de restaurante que abre no celular do cliente, sem aplicativo, com pedido montado na própria página.
+- **Catálogo web** — vitrine de produtos com carrinho na própria página.
+- **Página de links** — alternativa própria ao Linktree, em domínio do cliente em vez de perfil alugado.
+- **Resgate de site lento** — diagnóstico e correção de velocidade em site que já está no ar.
+- **Parceria white-label** — produção terceirizada para agências de tráfego e de marketing, com a marca da agência na entrega.
+
+## Projetos no ar
+
+- [Eureka Recreação](https://www.eurekarecreacao.com.br/): site institucional de recreação infantil em Rio Verde, GO.
+- [Nelore Steak House](https://nelore-steak-house.vercel.app/): cardápio digital de restaurante de carnes.
+- [DJ Jay](https://dj-jay-dun.vercel.app/): site de artista com sets do Spotify e agenda de eventos.
+- [SNKRS](https://sneaker-landing-page-fawn.vercel.app/): catálogo web de tênis com carrinho.
+- [Links da Simplifica](https://link.usesimplifica.com.br/): página de links em domínio próprio.
+
+## Como trabalhamos
+
+Entrega em 48 horas, hora a hora: briefing (H+00), estrutura e texto
+aprovados (H+04), design (H+18), montagem à mão sem tema pronto nem
+construtor visual (H+34), testes em celular e conexão fraca (H+44),
+no ar com domínio, formulário e pixels configurados (H+48).
+
+Toda entrega inclui domínio configurado, formulário ligado ao WhatsApp,
+pixel do Meta e do Google, relatório de acessos, hospedagem no primeiro
+ano e 30 dias de ajustes.
+
+## Atendimento
+
+Rio Verde e Goiânia, em Goiás, e remoto para todo o Brasil.
