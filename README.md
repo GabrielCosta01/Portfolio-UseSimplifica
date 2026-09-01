@@ -73,36 +73,40 @@ O projeto está ligado à Vercel (`simplifica-portfolio`). Da raiz:
 vercel deploy --prod
 ```
 
-### DNS pendente
+### DNS
 
-O domínio `usesimplifica.com.br` já está vinculado ao projeto na Vercel, mas
-os nameservers estão no **Registro.br**. Falta criar lá:
+O apex já está no ar. Falta só o `www`, que ainda não resolve:
 
 ```
-A    @      76.76.21.21
-A    www    76.76.21.21
+A    @      76.76.21.21    ✅ configurado
+A    www    76.76.21.21    ⬅ falta
 ```
 
 ⚠️ **Não troque os nameservers.** Os subdomínios `link`, `parceria` e `imob`
-apontam para outros projetos via CNAME e cairiam junto. Adicionar só o
-registro A do apex não afeta nenhum deles.
+apontam para outros projetos via CNAME e cairiam junto.
+
+O domínio `simplifica-portfolio.vercel.app` redireciona com 308 para o
+domínio próprio (`vercel.json`), para não competir como conteúdo duplicado.
 
 ---
 
-## Pendências de conteúdo
+## Conteúdo
 
-Os cinco cases são projetos reais, com link ao vivo e descrições conferidas
-nas próprias páginas. **Os números da faixa de estatísticas não são**, e
-precisam virar reais ou sair antes de o domínio apontar para cá:
+Os cinco cases são projetos reais, com link ao vivo e descrições
+conferidas nas próprias páginas.
 
-| Onde | O que está escrito | Situação |
-|---|---|---|
-| Faixa de números | 48 h do briefing ao ar | a confirmar |
-| Faixa de números | 0,6 s para a página abrir | a confirmar |
-| Faixa de números | +37% de conversão média | a confirmar |
-| Faixa de números | 30 dias de ajustes inclusos | a confirmar |
-| Topo | "2 vagas em setembro" | atualizar por mês |
-| Painel do manifesto | R$ 2,40 por clique | exemplo — ajustar ao CPC real |
+A faixa de números não afirma resultado que ninguém mediu. São dois
+compromissos de serviço que dependem só de cumprir (48 h de prazo,
+30 dias de ajustes), a contagem de projetos linkados na própria página,
+e a política de não usar tema pronto.
 
-O dado de 53% de abandono acima de 3 segundos é do Google/Think with Google
-e está citado na página.
+A frase "nenhuma página passa de 1 MB" vem de medição dos seis sites
+no ar em 01/09/2026: o mais leve tem 118 KB, o mais pesado 913 KB,
+mediana de 390 KB. Se entrar um projeto mais pesado que isso, a frase
+precisa mudar.
+
+O dado de 53% de abandono acima de 3 segundos é do Google/Think with
+Google e está citado na página.
+
+O exemplo da campanha usa CPC de R$ 2,40 e está rotulado como exemplo.
+Ajuste se o CPC típico dos seus clientes for outro.
