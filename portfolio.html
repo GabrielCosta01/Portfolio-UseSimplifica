@@ -220,6 +220,7 @@ a{ color:inherit; text-decoration:none; }
   justify-content:center;
   align-items:flex-end;
   margin:1.4rem 0 0;
+  padding-top:17vw;
   font-size:inherit;
   font-weight:inherit;
 }
@@ -236,7 +237,7 @@ a{ color:inherit; text-decoration:none; }
   user-select:none;
   font-family:var(--f-display);
   font-weight:800;
-  font-size:15vw;
+  font-size:16vw;
   line-height:.9;
   letter-spacing:-.042em;
   color:transparent;
@@ -244,7 +245,7 @@ a{ color:inherit; text-decoration:none; }
   overflow:hidden;
   padding-top:.14em;
 }
-.bigname.back { top:4%;    z-index:1; }
+.bigname.back { top:0;     z-index:1; }
 .bigname.front{ bottom:9%; z-index:3; -webkit-text-stroke:1.4px rgba(255,255,255,.5); }
 
 .bigname i{
@@ -276,10 +277,10 @@ a{ color:inherit; text-decoration:none; }
 .portrait{
   position:relative;
   z-index:2;
-  width:86vw;
-  max-width:520px;
-  -webkit-mask-image:linear-gradient(to bottom, #000 0%, #000 74%, rgba(0,0,0,.62) 90%, transparent 100%);
-          mask-image:linear-gradient(to bottom, #000 0%, #000 74%, rgba(0,0,0,.62) 90%, transparent 100%);
+  width:76vw;
+  max-width:430px;
+  -webkit-mask-image:linear-gradient(to bottom, #000 0%, #000 58%, rgba(0,0,0,.55) 80%, rgba(0,0,0,.15) 93%, transparent 100%);
+          mask-image:linear-gradient(to bottom, #000 0%, #000 58%, rgba(0,0,0,.55) 80%, rgba(0,0,0,.15) 93%, transparent 100%);
   clip-path:inset(100% 0 0 0);
 }
 .loaded .portrait{
@@ -902,8 +903,10 @@ section{ position:relative; }
   .nav a:hover{ color:#fff; border-color:var(--cyan); }
 
   .stage{ margin-top:2rem; }
-  .bigname{ font-size:16vw; }
-  .portrait{ width:56vw; max-width:540px; }
+  .stage{ padding-top:0; }
+  .bigname{ font-size:17vw; }
+  .bigname.back{ top:2%; }
+  .portrait{ width:46vw; max-width:430px; }
 
   .hero-foot{
     flex-direction:row; align-items:flex-end; justify-content:space-between;
@@ -949,10 +952,10 @@ section{ position:relative; }
   .stage{ flex:1; align-items:flex-end; min-height:min(66svh,640px); }
   /* top so na linha de tras: com top E bottom o box estica e as duas
      linhas acabam empilhadas no mesmo lugar */
-  .bigname{ font-size:min(14.5vw,12.5rem); }
-  .bigname.back { top:1vh; }
-  .bigname.front{ bottom:7%; }
-  .portrait{ width:38vw; max-width:560px; }
+  .bigname{ font-size:min(15.5vw,13.5rem); }
+  .bigname.back { top:-1.5vh; }
+  .bigname.front{ bottom:6%; }
+  .portrait{ width:31vw; max-width:460px; }
 
   .scroll-cue{
     display:inline-flex; align-items:center; gap:.55rem;
@@ -1427,7 +1430,7 @@ section{ position:relative; }
         <span class="svc-n">/ 03</span>
         <span class="svc-t">Cardápios e catálogos</span>
         <p class="svc-d">Cardápio ou vitrine que abre no celular, sem aplicativo.</p>
-        <span class="svc-tag"><b>a partir de R$ 2.500</b><small>1 semana</small></span>
+        <span class="svc-tag"><b>a partir de R$ 1.500</b><small>1 semana</small></span>
       </div>
       <div class="svc rv" style="--d:.15s">
         <span class="svc-n">/ 04</span>
